@@ -7,6 +7,26 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = ">=3.8, <3.11"
+yt-dlp = "^2021.11.10"
+
+[tool.poetry.dev-dependencies]
+pysen = {version = "^0.10.1", extras = ["lint"]}
+
+[tool.pysen]
+version = "0.9"
+
+[tool.pysen.lint]
+enable_black = true
+enable_flake8 = true
+enable_isort = true
+enable_mypy = true
+mypy_preset = "strict"
+line_length = 88
+
+[[tool.pysen.lint.mypy_targets]]
+  paths = [
+    "."
+  ]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

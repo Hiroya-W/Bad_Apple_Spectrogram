@@ -1,10 +1,21 @@
-# Bad Apple
-# niconico動画からbadappleの動画を取得する
+# Bad Apple!! 影絵MVをスペクトログラムで見る
 
-https://github.com/yt-dlp/yt-dlp
+![](https://storage.googleapis.com/zenn-user-upload/8fede24c3cdb-20211206.png)
 
-`sm8628149.mp4`が取得できる。
+## Install dependencies
+
+`poetry` を使ってバージョン管理をしているため、以下のようにして依存パッケージをインストールすることが出来ます。
 
 ```
-yt-dlp -o "%(id).s%(ext)s" https://www.nicovideo.jp/watch/sm8628149
+poetry intsall
+```
+
+## Run
+
+VSCode や Jupyter Lab など、`.ipynb` を実行出来る環境で `bad_apple.ipynb` を開き、実行します。
+依存パッケージとして Jupyter Lab はインストールされているので、以下のようにして立ち上げる事ができます。
+
+```
+poetry shell
+jupyter lab
 ```

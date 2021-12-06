@@ -131,3 +131,10 @@ dmypy.json
 
 # video files
 *.mp4
+frames
+
+# app
+_app
+
+# output
+output.wav
